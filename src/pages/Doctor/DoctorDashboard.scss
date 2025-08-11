@@ -1,0 +1,23 @@
+.doctorContainer {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .doctorSidebar {
+    width: 200px;
+    background-color: #44336b;
+    color: #ffffff;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .doctorContent {
+    flex: 1;
+    background-color: #f9fafe;
+    overflow-y: auto;
+    padding: 2rem 2rem;
+  }
+  

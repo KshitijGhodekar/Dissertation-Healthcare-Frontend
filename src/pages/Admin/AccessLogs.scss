@@ -1,0 +1,110 @@
+.access-logs-container {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  /* -------------------------
+       Search Bar 
+    --------------------------*/
+  .search-container {
+    padding: 1rem;
+    background-color: var(--mui-palette-background-paper);
+    border-radius: var(--mui-shape-borderRadius);
+  }
+
+  /* -------------------------
+       Table Wrapper
+    --------------------------*/
+  .tableWrapper {
+    width: 100%;
+    border-radius: 8px;
+
+    .tableSection {
+      width: 100%;
+      background-color: white;
+
+      .tableScrollContainer {
+        width: 100%;
+        overflow-x: auto;
+
+        .styledTable {
+          width: 100%;
+          border-collapse: collapse;
+
+          thead {
+            background-color: #f5f5f5;
+
+            th {
+              text-align: left;
+              font-weight: 500;
+              padding: 12px 16px;
+              color: rgba(0, 0, 0, 0.87);
+              border-bottom: 1px solid rgba(224, 224, 224, 1);
+            }
+          }
+
+          tbody {
+            tr {
+              &:hover {
+                background-color: rgba(0, 0, 0, 0.04);
+              }
+
+              td {
+                padding: 12px 16px;
+                border-bottom: 1px solid rgba(224, 224, 224, 1);
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .charts-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 1rem;
+
+    .chart-card {
+      background: white;
+      padding: 1.25rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h4 {
+        margin-bottom: 1rem;
+        font-weight: 500;
+        color: #333;
+      }
+    }
+  }
+
+  .transaction-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .access-logs-container {
+    padding: 1rem;
+
+    .tableWrapper {
+      .styledTable {
+        font-size: 0.85rem;
+      }
+    }
+
+    .charts-container {
+      grid-template-columns: 1fr;
+    }
+  }
+}

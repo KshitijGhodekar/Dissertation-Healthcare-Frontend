@@ -1,0 +1,186 @@
+.fabric-logs-container {
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #f0f2f5;
+
+  /* ---------------- Search Section ---------------- */
+  .search-container {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+
+  /* ---------------- Table Section ---------------- */
+  .tableWrapper {
+    width: 100%;
+    border-radius: 8px;
+
+    .tableSection {
+      width: 100%;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+
+      .tableScrollContainer {
+        width: 100%;
+        overflow-x: auto;
+
+        .styledTable {
+          width: 100%;
+          border-collapse: collapse;
+
+          thead {
+            background-color: #eceff1;
+
+            th {
+              text-align: left;
+              padding: 12px 16px;
+              font-weight: 500;
+              font-size: 0.875rem;
+              color: rgba(0, 0, 0, 0.87);
+              border-bottom: 1px solid rgba(224, 224, 224, 1);
+              white-space: nowrap;
+            }
+          }
+
+          tbody {
+            tr {
+              transition: background-color 0.2s;
+
+              &:hover {
+                background-color: rgba(0, 0, 0, 0.04);
+              }
+
+              td {
+                padding: 12px 16px;
+                border-bottom: 1px solid rgba(224, 224, 224, 1);
+                vertical-align: middle;
+                font-size: 0.875rem;
+                word-break: break-word;
+              }
+            }
+          }
+        }
+
+        /* Pagination Styling */
+        .MuiTablePagination-root {
+          border-top: 1px solid rgba(224, 224, 224, 1);
+          display: flex;
+          justify-content: flex-end;
+          padding: 0.5rem 1rem;
+          flex-wrap: wrap;
+          row-gap: 0.5rem;
+
+          .MuiTablePagination-toolbar {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+
+  /* ---------------- Charts Section ---------------- */
+  .charts-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+
+    .chart-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.75rem;
+    }
+
+    .TimeLine,
+    .HourlyChart {
+      background: #fff;
+      padding: 1.25rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      min-width: 350px;
+    }
+
+    .chart-loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 250px;
+    }
+  }
+
+  /* ---------------- Transaction Details ---------------- */
+  .transaction-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .detail-section {
+      .detail-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+        margin-top: 0.75rem;
+      }
+
+      .detail-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(224, 224, 224, 1);
+
+        & > *:first-child {
+          font-weight: 500;
+          color: #666;
+        }
+      }
+
+      .json-paper {
+        padding: 1rem;
+        margin-top: 0.5rem;
+        background-color: #fafafa;
+        border-radius: 6px;
+        max-height: 300px;
+        overflow: auto;
+        overflow-x: auto;
+        border: 1px solid rgba(224, 224, 224, 1);
+
+        pre {
+          margin: 0;
+          font-family: "Roboto Mono", monospace;
+          font-size: 0.85rem;
+          white-space: pre-wrap;
+          color: #333;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .fabric-logs-container {
+    padding: 1rem;
+
+    .charts-container {
+      grid-template-columns: 1fr;
+    }
+
+    .transaction-details .detail-section .detail-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .styledTable {
+      td,
+      th {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

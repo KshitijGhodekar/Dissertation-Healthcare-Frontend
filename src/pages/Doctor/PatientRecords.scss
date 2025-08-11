@@ -1,0 +1,141 @@
+.patientRecordsContainer {
+    padding: 24px;
+    background-color: #f9fafe;
+    min-height: calc(100vh - 48px);
+    box-sizing: border-box;
+  
+    .headerSection {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 16px;
+  
+      .title {
+        font-weight: 600;
+        color: #2c3e50;
+        margin: 0;
+      }
+      .lastUpdated {
+        font-size: 0.9rem;
+        color: #555;
+        display: flex;
+        align-items: center;
+      }
+    }
+  
+    .controlsSection {
+      display: flex;
+      margin-bottom: 24px;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+  
+    .loadingState {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+      color: #666;
+    }
+  
+    .emptyState {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 48px;
+      text-align: center;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+  
+    .recordCard {
+      border-radius: 12px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1) !important;
+      }
+  
+      .cardHeader {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+  
+      .cardFooter {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 16px;
+        padding-top: 8px;
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+      }
+    }
+  
+    .tableWrapper {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: 12px;
+    }
+  
+    .tableSection {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      min-width: 900px;
+  
+      .tableScrollContainer {
+        overflow-x: auto;
+        width: 100%;
+      }
+  
+      table {
+        width: 100%;
+        border-collapse: collapse;
+  
+        th, td {
+          padding: 16px;
+          text-align: left;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+          white-space: nowrap;
+        }
+  
+        th {
+          background-color: #f5f7fa;
+          font-weight: 600;
+          color: #4a5568;
+          position: sticky;
+          top: 0;
+        }
+  
+        tr {
+          transition: background-color 0.2s ease;
+  
+          &:hover {
+            background-color: #f8fafc;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .patientRecordsContainer {
+      padding: 16px;
+  
+      .headerSection {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+  
+      .controlsSection {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+  }
