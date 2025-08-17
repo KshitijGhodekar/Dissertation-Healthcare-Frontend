@@ -88,5 +88,8 @@ cross-border-healthcare-frontend/
 npm install
 npm run dev
 ```
+⚠️ **Note**  
+The frontend will start successfully, but API requests may fail if the backend is not running.  
+Please make sure to start the **Cross-Border Healthcare Backend** first, and then run the frontend.
 
 ---
