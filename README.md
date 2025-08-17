@@ -54,20 +54,34 @@ It allows hospitals and authorized healthcare professionals to securely request,
 ```text
 cross-border-healthcare-frontend/
 │
-├── public/              # Static assets (logo, icons, manifest)
-├── src/
-│   ├── components/      # Reusable UI components (Buttons, Forms, Modals)
-│   ├── pages/           # Main pages (Login, Dashboard, Audit Logs, FHIR Viewer)
-│   ├── services/        # API calls (System A, System B, Blockchain APIs)
-│   ├── store/           # Redux slices / state management
-│   ├── hooks/           # Custom React hooks
-│   ├── utils/           # Helper functions (encryption, validation)
-│   └── App.jsx          # Root React component
+├── public/                     # Static assets (logo, favicon)
+├── src/                        # Main application code
+│   ├── components/             # Reusable UI components
+│   │   ├── Header.jsx
+│   │   ├── PatientCard.jsx
+│   │   ├── RecordTable.jsx
+│   │   ├── Sidebar.jsx
+│   │   └── StatusBadge.jsx
+│   │
+│   ├── pages/                  # Application pages
+│   │   ├── Admin/              # Admin dashboards
+│   │   ├── Doctor/             # Doctor portal
+│   │   └── Login/              # Authentication
+│   │
+│   ├── services/               # API calls & backend integration
+│   ├── utils/                  # Helper functions
+│   │
+│   ├── App.jsx                 # Root component
+│   ├── index.jsx               # Entry point
+│   └── main.jsx                # Vite bootstrap file
 │
-├── tailwind.config.js   # TailwindCSS configuration
-├── package.json         # Project dependencies
-└── vite.config.js       # Vite build configuration
+├── .env                        # Environment variables
+├── index.html                  # HTML entry template
+├── package.json                # Dependencies & scripts
+└── vite.config.js              # Vite configuration
 ```
+---
+
 ## Getting Started
 
 ```text
