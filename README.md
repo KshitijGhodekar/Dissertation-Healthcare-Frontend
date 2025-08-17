@@ -21,7 +21,7 @@ University of Limerick
 
 ---
 
-## 📖 Overview
+## Overview
 The frontend provides a **web-based user interface** for interacting with the **Cross-Border Healthcare Data Exchange Broker**.  
 It enables hospitals and authorized healthcare professionals to securely request, view, and manage patient health records across borders.
 
@@ -34,7 +34,7 @@ Key Features:
 
 ---
 
-## 🛠 Technology Stack
+## Technology Stack
 
 | Layer                 | Technology Used             |
 |-----------------------|-----------------------------|
@@ -48,7 +48,7 @@ Key Features:
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 cross-border-healthcare-frontend/
