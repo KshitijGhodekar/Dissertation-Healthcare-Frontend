@@ -31,7 +31,9 @@ It allows hospitals and authorized healthcare professionals to securely request,
 - **Data Request Dashboard** → Track active requests with real-time status updates via Kafka  
 - **Blockchain Audit Logs** → View immutable records of all data transactions for compliance and transparency  
 - **Access Logs** → Monitor and trace system access and activity for enhanced accountability  
-- **FHIR Data Viewer** → Visualize patient records in HL7 FHIR-compliant format for interoperability  
+- **FHIR Data Viewer** → Visualize patient records in HL7 FHIR-compliant format for interoperability
+- **Patient Table** → View all patient data in a structured table format  
+- **Download Patient Info (PDF)** → Export patient details directly from the table as downloadable PDF files  
 
 ---
 
