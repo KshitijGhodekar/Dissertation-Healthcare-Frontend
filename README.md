@@ -23,14 +23,15 @@ University of Limerick
 
 ## Overview
 The frontend provides a **web-based user interface** for interacting with the **Cross-Border Healthcare Data Exchange Broker**.  
-It enables hospitals and authorized healthcare professionals to securely request, view, and manage patient health records across borders.
+It allows hospitals and authorized healthcare professionals to securely request, view, and manage patient health records across borders.
 
-Key Features:
-- **Cross-border request initiation** (Ireland → India, India → Ireland)  
-- **Secure login and authentication** for healthcare providers  
-- **Data request dashboard** with real-time status updates via Kafka  
-- **Blockchain audit logs** view for traceability  
-- **FHIR-compliant healthcare data visualization**  
+### Key Features
+- **Cross-Border Request Initiation** → Create and send patient data requests between hospitals (System B → System A, and vice versa)  
+- **Secure Authentication** → Login and role-based access control for healthcare providers  
+- **Data Request Dashboard** → Track active requests with real-time status updates via Kafka  
+- **Blockchain Audit Logs** → View immutable records of all data transactions for compliance and transparency  
+- **Access Logs** → Monitor and trace system access and activity for enhanced accountability  
+- **FHIR Data Viewer** → Visualize patient records in HL7 FHIR-compliant format for interoperability  
 
 ---
 
@@ -67,4 +68,11 @@ cross-border-healthcare-frontend/
 ├── package.json         # Project dependencies
 └── vite.config.js       # Vite build configuration
 ```
+## Getting Started
 
+```text
+npm install
+npm run dev
+```
+
+---
