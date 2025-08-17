@@ -26,25 +26,25 @@ The frontend provides a **web-based user interface** for interacting with the **
 It enables hospitals and authorized healthcare professionals to securely request, view, and manage patient health records across borders.
 
 Key Features:
-- 🌍 **Cross-border request initiation** (Ireland → India, India → Ireland)  
-- 🔐 **Secure login and authentication** for healthcare providers  
-- 📡 **Data request dashboard** with real-time status updates via Kafka  
-- 📜 **Blockchain audit logs** view for traceability  
-- 🏥 **FHIR-compliant healthcare data visualization**  
+- **Cross-border request initiation** (Ireland → India, India → Ireland)  
+- **Secure login and authentication** for healthcare providers  
+- **Data request dashboard** with real-time status updates via Kafka  
+- **Blockchain audit logs** view for traceability  
+- **FHIR-compliant healthcare data visualization**  
 
 ---
 
 ## 🛠 Technology Stack
 
-| Layer                 | Technology Used       |
-|-----------------------|-----------------------|
-| Frontend Framework    | React.js (Vite/CRA)   |
-| UI Components         | TailwindCSS, ShadCN   |
+| Layer                 | Technology Used             |
+|-----------------------|-----------------------------|
+| Frontend Framework    | React.js (Vite/CRA)         |
+| UI Components         | TailwindCSS, ShadCN         |
 | State Management      | Redux Toolkit / Context API |
-| Charts & Visualization| Recharts              |
-| API Communication     | Axios (REST API)      |
-| Authentication        | JWT / OAuth2          |
-| Blockchain Data       | Hyperledger Fabric APIs |
+| Charts & Visualization| Recharts                    |
+| API Communication     | Axios (REST API)            |
+| Authentication        | JWT / OAuth2                |
+| Blockchain Data       | Hyperledger Fabric APIs     |
 
 ---
 
